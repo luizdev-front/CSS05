@@ -2,20 +2,31 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Imagem</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Animações com CSS e JavaScript</title>
   <link rel="stylesheet" href="style.css">
-   <script src="script.js"></script>
 </head>
 <body>
+
+  <!-- 1. Animação com clique -->
   <section>
-  <div id="container">
-    <button id="botao">Clique aqui</button>
-    <img src="foto.webp" alt="botao" />
-  </div>
-<section>
-</section>
-<button id="meuBotao">Clique aqui</button>
- 
+    <h2>Animação ao Clicar</h2>
+    <button id="animarBotao">Clique aqui</button>
+    <div class="caixa-click" id="caixaClick"></div>
+  </section>
+
+  <!-- 2. Hover com transform scale -->
+  <section>
+    <h2>Animação com Hover (Transform)</h2>
+    <div class="caixa-hover"></div>
+  </section>
+
+  <!-- 3. Hover com Keyframes -->
+  <section>
+    <h2>Animação com Hover (Keyframes)</h2>
+    <div class="caixa-keyframe-hover"></div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
- 

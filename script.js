@@ -1,9 +1,12 @@
-const botao = document.getElementById('botao');
+const botao = document.getElementById("animarBotao");
+const caixa = document.getElementById("caixaClick");
 
-botao.addEventListener('click', () => {
-  botao.classList.add('girar');
+botao.addEventListener("click", () => {
+  caixa.classList.add("animar");
 
-  botao.addEventListener('animationend', () => {
-    botao.classList.remove('girar');
-  }, { once: true });
+  // Remove a classe após a animação para permitir múltiplos cliques
+  setTimeout(() => {
+    caixa.classList.remove("animar");
+  }, 600);
 });
+
